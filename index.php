@@ -320,9 +320,6 @@
             </div>
         </article>
     </main>
-    
-    <div class="control-box prev"><i class="icon-"></i></div>
-    <div class="control-box prev"></div>
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/footer.php');?>
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/docfoot.php');?>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

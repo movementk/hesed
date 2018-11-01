@@ -332,7 +332,7 @@ body {
     margin-left: -585px; }
 
 .service {
-  padding: 90px 0; }
+  padding: 80px 0 90px; }
   .service .section-header {
     padding-bottom: 50px; }
     .service .section-header h3 {
@@ -545,7 +545,7 @@ body {
     background-image: url(/assets/images/main/professional_icon_on04.png); }
 
 .information {
-  padding: 90px 0 120px; }
+  padding: 80px 0 120px; }
   .information article .article-title {
     font-size: 20px;
     color: #333;
