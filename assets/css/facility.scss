@@ -1,0 +1,32 @@
+@import 'common';
+
+.facility {
+    .page-header {
+        background-image: url(/assets/images/facility/bg_page_header.jpg);
+    }
+    .section-content {
+        padding-top: 0;
+    }
+}
+
+// facility-list
+.facility-list {
+    .section-content {
+        padding-top: 60px;
+        .paging {
+            margin-top: 35px;
+        }
+        .search-form {
+            margin-top: 40px;
+        }
+    }
+}
+
+// facility-view
+.facility-view {
+    .section-content {
+        .btn-area {
+            margin-top: 30px;
+        }
+    }
+}

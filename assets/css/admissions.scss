@@ -1,0 +1,146 @@
+@import 'common';
+
+.admissions {
+    .page-header {
+        background-image: url(/assets/images/admissions/bg_page_header.jpg);
+    }
+}
+
+// procedure
+.procedure {
+    .section-content {
+        .sub-title {
+            & ~ .sub-title {
+                margin-top: 90px;
+            }
+        }
+        article {
+            text-align: center;
+            h6 {
+                display: block;
+                font-size: 18px;
+                color: #fff;
+                font-weight: 400;
+                padding: 15px 0;
+                background-color: #004f70;
+                small {
+                    font-size: 14px;
+                    display: block;
+                    margin-top: 10px;
+                    font-weight: 300;
+                }
+            }
+            .article-content {
+                padding: 40px 0;
+                border: 1px solid #dfdfdf;
+                border-top: 0;
+                .circle-list {
+                    overflow: hidden;
+                    li {
+                        position: relative;
+                        float: left;
+                        .details {
+                            display: table;
+                            width: 100%;
+                            table-layout: fixed;
+                            .v-align {
+                                display: table-cell;
+                                vertical-align: middle;
+                                width: 175px;
+                                height: 175px;
+                                border-radius: 50%;
+                                background-color: #f1f1f1;
+                                p {
+                                    font-size: 18px;
+                                    color: #333;
+                                    font-weight: 400;
+                                }
+                                small {
+                                    display: block;
+                                    font-size: 15px;
+                                    color: #555;
+                                    font-weight: 300;
+                                    margin-top: 5px;
+                                }
+                            }
+                        }
+                        &:after {
+                            position: absolute;
+                            top: 50%;
+                            right: -7px;
+                            margin-top: -13px;
+                            content: url(/assets/images/admissions/icon_arrow_right.gif);
+                        }
+                        &:last-child {
+                            &:after {
+                                display: none;
+                            }
+                            .details {
+                                .v-align {
+                                    background-color: #7f8793;
+                                    p {
+                                        color: #fff;
+                                    }
+                                    small {
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & ~ article {
+                margin-top: 30px;
+            }
+            &.sub-content-1 {
+                .article-content {
+                    .circle-list {
+                        li {
+                            width: 25%;
+                            padding: 0 20px;
+                        }
+                    }
+                }
+            }
+            &.sub-content-2 {
+                h6 {
+                    background-color: #33738d;
+                }
+                .article-content {
+                    .circle-list {
+                        li {
+                            width: 33.33%;
+                            padding: 0 57px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// preparation-item
+.preparation-item {
+    .section-content {
+        .summary {
+            font-size: 22px;
+            color: #555;
+        }
+        .decimal-list {
+            margin-top: 40px;
+            padding: 50px 40px;
+            background-color: #f1f1f1;
+            border: 1px solid #dfdfdf;
+            li {
+                .attention {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 38px;
+                    color: #004f6f;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

@@ -224,13 +224,13 @@ body {
 
 .section-header {
   text-align: center;
-  padding: 55px 0 40px;
-  border-bottom: 2px solid #333; }
+  padding: 55px 0 40px; }
   .section-header h4 {
     font-size: 38px;
     color: #333; }
 
 .section-content {
+  border-top: 2px solid #333;
   padding: 90px 0 120px; }
 
 .sub-title {
@@ -266,12 +266,11 @@ body {
     font-weight: 500;
     background-color: #ff9045; }
 
-.board-table .table {
+.board-table > .table {
   margin: 0;
   border: 0;
-  border-top: 2px solid #333;
   table-layout: fixed; }
-  .board-table .table thead tr th {
+  .board-table > .table thead tr th {
     font-size: 16px;
     color: #333;
     font-weight: 400;
@@ -280,7 +279,7 @@ body {
     border: 0;
     border-bottom: 1px solid #333;
     background-color: #f3f3f3; }
-  .board-table .table tbody tr td {
+  .board-table > .table tbody tr td {
     font-size: 15px;
     color: #999;
     font-weight: 400;
@@ -289,16 +288,16 @@ body {
     padding: 10px 0;
     border: 0;
     border-bottom: 1px solid #ccc; }
-    .board-table .table tbody tr td a {
+    .board-table > .table tbody tr td a {
       color: #555;
       display: block;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap; }
-    .board-table .table tbody tr td.subject {
+    .board-table > .table tbody tr td.subject {
       padding-left: 20px;
       text-align: left; }
-    .board-table .table tbody tr td.situation p {
+    .board-table > .table tbody tr td.situation p {
       width: 80px;
       height: 30px;
       line-height: 28px;
@@ -308,13 +307,13 @@ body {
       display: block;
       margin: 0 auto;
       border: 1px solid #ccc; }
-      .board-table .table tbody tr td.situation p.success {
+      .board-table > .table tbody tr td.situation p.success {
         color: #fff;
         border-color: #898989;
         background-color: #898989; }
-  .board-table .table tbody tr.new-notice td .icon-volume {
+  .board-table > .table tbody tr.new-notice td .icon-volume {
     color: #128d99; }
-  .board-table .table tbody tr.new-notice td > a {
+  .board-table > .table tbody tr.new-notice td > a {
     text-align: left;
     color: #128d99; }
 
@@ -530,5 +529,217 @@ body {
         margin-right: 15px; }
       .paging > .pagination > li.next > a {
         margin-left: 15px; }
+
+.board-view .view-header {
+  padding: 35px 20px 35px;
+  background-color: #f3f3f3; }
+  .board-view .view-header h5 {
+    font-size: 22px;
+    color: #333;
+    font-weight: 400;
+    line-height: 26px; }
+  .board-view .view-header ul {
+    margin-top: 15px; }
+    .board-view .view-header ul li {
+      font-size: 12px;
+      color: #999;
+      font-weight: 300;
+      display: inline-block;
+      margin-right: 20px; }
+      .board-view .view-header ul li:before {
+        font-family: "fontello";
+        margin-right: 10px; }
+      .board-view .view-header ul li.usr:before {
+        content: "\E806"; }
+      .board-view .view-header ul li.date:before {
+        content: "\F133"; }
+      .board-view .view-header ul li.hit:before {
+        content: "\E808"; }
+.board-view .view-body {
+  font-size: 16px;
+  color: #555;
+  line-height: 30px;
+  font-weight: 300;
+  padding: 60px 20px 70px;
+  border-bottom: 1px solid #ccc; }
+  .board-view .view-body .reply {
+    margin-top: 50px;
+    padding: 35px 30px;
+    background-color: #f9f9f9;
+    border: 1px solid #dfdfdf; }
+    .board-view .view-body .reply h6 {
+      font-size: 15px;
+      color: #004f70;
+      font-weight: 500; }
+    .board-view .view-body .reply p {
+      font-size: 16px;
+      color: #555;
+      line-height: 22px;
+      margin-top: 15px; }
+.board-view > .attach {
+  position: relative;
+  padding-left: 135px; }
+  .board-view > .attach > dt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 135px;
+    font-size: 14px;
+    color: #999;
+    font-weight: 400;
+    line-height: 56px;
+    padding-left: 20px; }
+    .board-view > .attach > dt:before {
+      content: "\E807";
+      font-family: "fontello";
+      margin-right: 10px; }
+  .board-view > .attach > dd > a {
+    font-size: 14px;
+    color: #999;
+    font-weight: 400;
+    display: inline-block;
+    line-height: 56px; }
+    .board-view > .attach > dd > a:hover {
+      text-decoration: underline; }
+    .board-view > .attach > dd > a:after {
+      content: ", ";
+      margin-right: 5px; }
+    .board-view > .attach > dd > a:last-child:after {
+      content: "";
+      margin-right: 0; }
+.board-view > .pagelink {
+  border-top: 1px solid #1e1e1e;
+  border-bottom: 1px solid #1e1e1e; }
+  .board-view > .pagelink > li > dl {
+    position: relative;
+    padding-left: 135px; }
+    .board-view > .pagelink > li > dl > dt {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 135px;
+      font-size: 14px;
+      color: #333;
+      font-weight: 400;
+      padding-left: 20px;
+      line-height: 55px; }
+      .board-view > .pagelink > li > dl > dt:after {
+        font-family: "fontello";
+        margin-left: 30px; }
+    .board-view > .pagelink > li > dl > dd {
+      padding-right: 20px; }
+      .board-view > .pagelink > li > dl > dd > a {
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 14px;
+        line-height: 55px;
+        color: #555;
+        font-weight: 400; }
+  .board-view > .pagelink > li.prev {
+    border-bottom: 1px solid #ccc; }
+    .board-view > .pagelink > li.prev > dl > dt:after {
+      content: "\F005"; }
+  .board-view > .pagelink > li.next > dl > dt:after {
+    content: "\F004"; }
+
+.write-form .table tbody tr th {
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+  font-weight: 400;
+  padding-left: 30px;
+  vertical-align: middle;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  background-color: #f3f3f3; }
+  .write-form .table tbody tr th.v-align {
+    padding-top: 20px;
+    vertical-align: top; }
+.write-form .table tbody tr td {
+  vertical-align: middle;
+  padding: 10px 30px;
+  border: 0;
+  border-bottom: 1px solid #ccc; }
+  .write-form .table tbody tr td .form-group textarea {
+    height: 255px !important; }
+  .write-form .table tbody tr td .form-group .form-control {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #dfdfdf; }
+  .write-form .table tbody tr td.short .form-group .form-control {
+    width: 200px; }
+  .write-form .table tbody tr td.file .form-group {
+    position: relative;
+    padding-right: 110px; }
+    .write-form .table tbody tr td.file .form-group .file {
+      width: 100%; }
+    .write-form .table tbody tr td.file .form-group .form-control {
+      background-color: #fff !important; }
+    .write-form .table tbody tr td.file .form-group input[type='button'] {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 14px;
+      color: #fff;
+      line-height: 35px;
+      text-align: center;
+      width: 100px;
+      border: 0;
+      padding: 0;
+      cursor: pointer;
+      background-color: #898989;
+      -webkit-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.15s;
+      transition-duration: 0.15s;
+      -webkit-transition-timing-function: linear;
+      transition-timing-function: linear;
+      -webkit-transition-delay: 0s;
+      transition-delay: 0s; }
+      .write-form .table tbody tr td.file .form-group input[type='button']:hover {
+        opacity: .7; }
+    .write-form .table tbody tr td.file .form-group input[type='file'] {
+      display: none !important; }
+
+.btn-area {
+  text-align: right; }
+  .btn-area p .btn {
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.15s;
+    transition-duration: 0.15s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s; }
+    .btn-area p .btn:hover {
+      opacity: .7; }
+    .btn-area p .btn.btn-default {
+      display: inline-block;
+      width: 170px;
+      height: 45px;
+      line-height: 45px;
+      text-align: center;
+      font-size: 15px;
+      color: #fff;
+      background-color: #004f70; }
+  .btn-area p.btn-list {
+    overflow: hidden; }
+    .btn-area p.btn-list .btn-white {
+      float: left;
+      width: 135px;
+      font-size: 16px;
+      color: #004f70;
+      line-height: 43px;
+      margin-right: 10px;
+      border: 1px solid #004f70;
+      background-color: #fff; }
+      .btn-area p.btn-list .btn-white:last-child {
+        margin-right: 0; }
+    .btn-area p.btn-list .btn-default {
+      font-size: 16px;
+      float: right; }
 
 /*# sourceMappingURL=sub.css.map */

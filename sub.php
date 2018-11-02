@@ -638,6 +638,56 @@
                             
                             <br><br>
                             
+                            <article class="board-view">
+                                <div class="view-header">
+                                    <h5>게시글의 제목이 노출되는 영역입니다.</h5>
+                                    <ul>
+                                        <li class="usr">헤세드하우스</li>
+                                        <li class="date">18-10-10</li>
+                                        <li class="hit">123</li>
+                                    </ul>
+                                </div>
+                                <div class="view-body">
+                                    요양원 헤세드하우스는 노령화로 인해 거동이 불편하시면서 <br>
+                                    가족들의 보살핌이 여의치 않거나, 치매, 중풍, 뇌졸중 등 노인성 <br>
+                                    질환으로 고생하시는 어르신들과 그 가족을 위한 노인전문 <br>요양시설입니다.<br><br>
+                                    좋은 시설과 최고의 서비스로 어르신들의 심신안정과 휴식을 <br>
+                                    취할 수 있도록 내 부모처럼, 편안한 마음으로 정성껏 모실 것을 <br>약속드립니다.
+                                    <div class="reply">
+                                        <h6>요양원 헤세드하우스</h6>
+                                        <p>관리자 답변 내용이 노출되는 영역입니다.</p>
+                                    </div>
+                                </div>
+                                <dl class="attach">
+                                    <dt>첨부파일</dt>
+                                    <dd>
+                                        <a href="#">첨부파일.hwp</a>
+                                        <a href="#">첨부파일.hwp</a>
+                                        <a href="#">첨부파일.hwp</a>
+                                    </dd>
+                                </dl>
+                                <ul class="pagelink">
+                                    <li class="prev">
+                                        <dl>
+                                            <dt>이전글</dt>
+                                            <dd>
+                                                <a href="#">이전글이 없습니다.</a>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li class="next">
+                                        <dl>
+                                            <dt>다음글</dt>
+                                            <dd>
+                                                <a href="#">다음글이 없습니다.</a>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </article>
+                            
+                            <br><br>
+                            
                             <div class="search-form">
                                 <form action="#">
                                     <div class="form-group">
@@ -695,6 +745,90 @@
                                     </li>
                                 </ul>
                             </nav>
+                            
+                            <br><br>
+                            
+                            <div class="table-wrap write-form">
+                                <form action="#">
+                                    <table class="table">
+                                        <colgroup>
+                                            <col style="width: 170px;">
+                                            <col style="width: ;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th><label for="u-title">제목</label></th>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <input type="text" id="u-title" class="form-control">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th><label for="u-name">이름</label></th>
+                                                <td class="short">
+                                                    <div class="form-group">
+                                                        <input type="text" id="u-name" class="form-control">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th><label for="u-pw">비밀번호</label></th>
+                                                <td class="short">
+                                                    <div class="form-group">
+                                                        <input type="password" id="u-pw" class="form-control">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th><label for="u-content">내용</label></th>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <textarea class="form-control" id="u-content"></textarea>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th><label for="u-link">링크</label></th>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <input type="text" id="u-link" class="form-control">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>자동등록방지</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th><label for="file2">첨부파일</label></th>
+                                                <td class="file">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control file" id="txt2" name="txt2" readonly>
+                                                        <label for="txt2" class="sr-only">업로드된 파일명</label>
+                                                        <input type="button" value="파일첨부" onclick="document.getElementById('file2').click();">
+                                                        <input type="file" id="file2" name="file2" onchange="document.getElementById('txt2').value = this.value">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </form>
+                            </div>
+                            
+                            <br><br>
+                            
+                            <div class="btn-area">
+                                <p>
+                                    <a href="#" class="btn btn-default" role="button">문의하기</a>
+                                </p>
+                                <br>
+                                <p class="btn-list">
+                                    <a href="#" class="btn btn-white" role="button">수정하기</a>
+                                    <a href="#" class="btn btn-white" role="button">삭제하기</a>
+                                    <a href="#" class="btn btn-default" role="button">목록으로</a>
+                                </p>
+                            </div>
                             
                         </div>
                     </section>

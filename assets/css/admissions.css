@@ -1,0 +1,250 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&subset=korean");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+/* 초기화 */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+p {
+  margin-bottom: 0; }
+
+label {
+  margin: 0;
+  font-weight: 400; }
+
+ul, ol {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none; }
+
+dl {
+  margin-bottom: 0; }
+  dl dd {
+    margin-bottom: 0; }
+
+address {
+  margin-bottom: 0; }
+
+figure {
+  margin: 0; }
+
+button:hover, button:focus {
+  box-shadow: none; }
+
+a {
+  color: inherit; }
+  a:hover, a:focus {
+    color: inherit;
+    box-shadow: none;
+    text-decoration: none; }
+
+.table {
+  margin: 0; }
+
+.btn {
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none !important; }
+
+.form-group {
+  margin: 0; }
+
+.form-control {
+  border-radius: 0;
+  box-shadow: none !important; }
+
+.container .row,
+.container-fluid .row {
+  overflow: hidden; }
+  .container .row .col-1,
+  .container .row .col-md-1,
+  .container .row .col-lg-1,
+  .container-fluid .row .col-1,
+  .container-fluid .row .col-md-1,
+  .container-fluid .row .col-lg-1 {
+    float: left; }
+  .container .row .col-2,
+  .container .row .col-md-2,
+  .container .row .col-lg-2,
+  .container-fluid .row .col-2,
+  .container-fluid .row .col-md-2,
+  .container-fluid .row .col-lg-2 {
+    float: left; }
+  .container .row .col-3,
+  .container .row .col-md-3,
+  .container .row .col-lg-3,
+  .container-fluid .row .col-3,
+  .container-fluid .row .col-md-3,
+  .container-fluid .row .col-lg-3 {
+    float: left; }
+  .container .row .col-4,
+  .container .row .col-md-4,
+  .container .row .col-lg-4,
+  .container-fluid .row .col-4,
+  .container-fluid .row .col-md-4,
+  .container-fluid .row .col-lg-4 {
+    float: left; }
+  .container .row .col-5,
+  .container .row .col-md-5,
+  .container .row .col-lg-5,
+  .container-fluid .row .col-5,
+  .container-fluid .row .col-md-5,
+  .container-fluid .row .col-lg-5 {
+    float: left; }
+  .container .row .col-6,
+  .container .row .col-md-6,
+  .container .row .col-lg-6,
+  .container-fluid .row .col-6,
+  .container-fluid .row .col-md-6,
+  .container-fluid .row .col-lg-6 {
+    float: left; }
+  .container .row .col-7,
+  .container .row .col-md-7,
+  .container .row .col-lg-7,
+  .container-fluid .row .col-7,
+  .container-fluid .row .col-md-7,
+  .container-fluid .row .col-lg-7 {
+    float: left; }
+  .container .row .col-8,
+  .container .row .col-md-8,
+  .container .row .col-lg-8,
+  .container-fluid .row .col-8,
+  .container-fluid .row .col-md-8,
+  .container-fluid .row .col-lg-8 {
+    float: left; }
+  .container .row .col-9,
+  .container .row .col-md-9,
+  .container .row .col-lg-9,
+  .container-fluid .row .col-9,
+  .container-fluid .row .col-md-9,
+  .container-fluid .row .col-lg-9 {
+    float: left; }
+  .container .row .col-10,
+  .container .row .col-md-10,
+  .container .row .col-lg-10,
+  .container-fluid .row .col-10,
+  .container-fluid .row .col-md-10,
+  .container-fluid .row .col-lg-10 {
+    float: left; }
+  .container .row .col-11,
+  .container .row .col-md-11,
+  .container .row .col-lg-11,
+  .container-fluid .row .col-11,
+  .container-fluid .row .col-md-11,
+  .container-fluid .row .col-lg-11 {
+    float: left; }
+  .container .row .col-12,
+  .container .row .col-md-12,
+  .container .row .col-lg-12,
+  .container-fluid .row .col-12,
+  .container-fluid .row .col-md-12,
+  .container-fluid .row .col-lg-12 {
+    float: left; }
+  .container .row.priority,
+  .container-fluid .row.priority {
+    overflow: visible; }
+
+.container {
+  max-width: 1200px !important; }
+
+body {
+  position: relative;
+  min-width: 1200px;
+  font-size: 14px;
+  color: #666;
+  font-weight: 400;
+  font-family: 'Noto Sans KR', sans-serif; }
+
+.admissions .page-header {
+  background-image: url(/assets/images/admissions/bg_page_header.jpg); }
+
+.procedure .section-content .sub-title ~ .sub-title {
+  margin-top: 90px; }
+.procedure .section-content article {
+  text-align: center; }
+  .procedure .section-content article h6 {
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+    padding: 15px 0;
+    background-color: #004f70; }
+    .procedure .section-content article h6 small {
+      font-size: 14px;
+      display: block;
+      margin-top: 10px;
+      font-weight: 300; }
+  .procedure .section-content article .article-content {
+    padding: 40px 0;
+    border: 1px solid #dfdfdf;
+    border-top: 0; }
+    .procedure .section-content article .article-content .circle-list {
+      overflow: hidden; }
+      .procedure .section-content article .article-content .circle-list li {
+        position: relative;
+        float: left; }
+        .procedure .section-content article .article-content .circle-list li .details {
+          display: table;
+          width: 100%;
+          table-layout: fixed; }
+          .procedure .section-content article .article-content .circle-list li .details .v-align {
+            display: table-cell;
+            vertical-align: middle;
+            width: 175px;
+            height: 175px;
+            border-radius: 50%;
+            background-color: #f1f1f1; }
+            .procedure .section-content article .article-content .circle-list li .details .v-align p {
+              font-size: 18px;
+              color: #333;
+              font-weight: 400; }
+            .procedure .section-content article .article-content .circle-list li .details .v-align small {
+              display: block;
+              font-size: 15px;
+              color: #555;
+              font-weight: 300;
+              margin-top: 5px; }
+        .procedure .section-content article .article-content .circle-list li:after {
+          position: absolute;
+          top: 50%;
+          right: -7px;
+          margin-top: -13px;
+          content: url(/assets/images/admissions/icon_arrow_right.gif); }
+        .procedure .section-content article .article-content .circle-list li:last-child:after {
+          display: none; }
+        .procedure .section-content article .article-content .circle-list li:last-child .details .v-align {
+          background-color: #7f8793; }
+          .procedure .section-content article .article-content .circle-list li:last-child .details .v-align p {
+            color: #fff; }
+          .procedure .section-content article .article-content .circle-list li:last-child .details .v-align small {
+            color: #fff; }
+  .procedure .section-content article ~ article {
+    margin-top: 30px; }
+  .procedure .section-content article.sub-content-1 .article-content .circle-list li {
+    width: 25%;
+    padding: 0 20px; }
+  .procedure .section-content article.sub-content-2 h6 {
+    background-color: #33738d; }
+  .procedure .section-content article.sub-content-2 .article-content .circle-list li {
+    width: 33.33%;
+    padding: 0 57px; }
+
+.preparation-item .section-content .summary {
+  font-size: 22px;
+  color: #555; }
+.preparation-item .section-content .decimal-list {
+  margin-top: 40px;
+  padding: 50px 40px;
+  background-color: #f1f1f1;
+  border: 1px solid #dfdfdf; }
+  .preparation-item .section-content .decimal-list li .attention {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 38px;
+    color: #004f6f;
+    text-decoration: underline; }
+
+/*# sourceMappingURL=admissions.css.map */

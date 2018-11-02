@@ -22,9 +22,9 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">시설안내</a>
+                            <a href="/facility/facility_list.php">시설안내</a>
                             <ul>
-                                <li><a href="#">시설안내 <span></span></a></li>
+                                <li><a href="/facility/facility_list.php">시설안내 <span></span></a></li>
                             </ul>
                         </li>
                         <li>
@@ -35,20 +35,20 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">입소안내</a>
+                            <a href="/admissions/procedure.php">입소안내</a>
                             <ul>
-                                <li><a href="#">입소절차 <span></span></a></li>
-                                <li><a href="#">준비사항 <span></span></a></li>
+                                <li><a href="/admissions/procedure.php">입소절차 <span></span></a></li>
+                                <li><a href="/admissions/preparation_item.php">준비사항 <span></span></a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="#">커뮤니티</a>
+                            <a href="/community/inquiry_list.php">커뮤니티</a>
                             <ul>
-                                <li><a href="#">상담문의 <span></span></a></li>
-                                <li><a href="#">포토앨범 <span></span></a></li>
-                                <li><a href="#">주간식단표 <span></span></a></li>
-                                <li><a href="#">공지사항 <span></span></a></li>
-                                <li><a href="#">자유게시판 <span></span></a></li>
+                                <li><a href="/community/inquiry_list.php">상담문의 <span></span></a></li>
+                                <li><a href="/community/photo_list.php">포토앨범 <span></span></a></li>
+                                <li><a href="/community/foot_table.php">주간식단표 <span></span></a></li>
+                                <li><a href="/community/notice_list.php">공지사항 <span></span></a></li>
+                                <li><a href="/community/free_board_list.php">자유게시판 <span></span></a></li>
                             </ul>
                         </li>
                     </ul>
