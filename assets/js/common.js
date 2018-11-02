@@ -1,11 +1,12 @@
 (function($){
     // gnb menu
-    $(document).on('mouseenter focus', '#gnb > ul > li > a', function(){
+    $(document).on('mouseenter focus', '#gnb > ul > li', function(){
         $('body').addClass('opened');
-        $(this).parent().siblings().removeClass('active');
-        $(this).parent().addClass('active');
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
     });
-    $(document).on('mouseleave', '#header > .container', function(){
+    $(document).on('mouseleave', '#header', function(){
         $('body').removeClass('opened');
+        $('#gnb > ul > li').removeClass('active');
     });
 })(jQuery);

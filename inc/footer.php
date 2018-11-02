@@ -1,5 +1,19 @@
 <!-- Footer -->
 <footer id="footer">
+    <article class="contact">
+        <div class="container">
+            <figure>
+                <img src="/assets/images/main/icon_contact.png" alt="">
+                <figcaption>
+                    <dl>
+                        <dt>대표번호</dt>
+                        <dd>031-274-1000</dd>
+                    </dl>
+                </figcaption>
+            </figure>
+            <p>궁금하신점이 있으신가요?<br>언제든지 전화주시면 친절하게 답변해드립니다!</p>
+        </div>
+    </article>
     <div class="container">
         <div class="row">
             <div class="col-3">

@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&subset=korean");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
 /* 초기화 */
 h1, h2, h3, h4, h5, h6 {
@@ -142,6 +143,9 @@ a {
   .container-fluid .row .col-md-12,
   .container-fluid .row .col-lg-12 {
     float: left; }
+  .container .row.priority,
+  .container-fluid .row.priority {
+    overflow: visible; }
 
 .container {
   max-width: 1200px !important; }
@@ -687,34 +691,5 @@ body {
           font-family: 'Lato', sans-serif;
           font-size: 13px;
           color: #666; }
-
-.contact {
-  text-align: center;
-  padding: 75px 0 65px;
-  background-image: url(/assets/images/main/bg_contact.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%; }
-  .contact figure img {
-    display: block;
-    margin: 0 auto; }
-  .contact figure figcaption {
-    margin-top: 45px; }
-    .contact figure figcaption dl {
-      color: #fff;
-      font-size: 32px; }
-      .contact figure figcaption dl dt {
-        display: inline-block;
-        font-weight: 500;
-        margin-right: 10px; }
-      .contact figure figcaption dl dd {
-        display: inline-block;
-        font-weight: 500; }
-  .contact p {
-    font-size: 16px;
-    color: #fff;
-    line-height: 24px;
-    font-weight: 300;
-    margin-top: 30px; }
 
 /*# sourceMappingURL=main.css.map */

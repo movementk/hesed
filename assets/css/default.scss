@@ -2,6 +2,7 @@
 
 // header 
 #header {
+    overflow: hidden;
     position: fixed;
     top: 0;
     left: 0;
@@ -17,6 +18,41 @@
             display: block;
         }
     }
+    .gnb-intro {
+        position: absolute;
+        top: 95px;
+        left: 0;
+        width: 100%;
+        height: 0;
+        text-align: center;
+        @include transition();
+        background-color: rgba(0, 79, 111, .95);
+        figure {
+            opacity: 0;
+            margin-top: 43px;
+            @include transition($duration: .6s);
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+            figcaption {
+                margin-top: 20px;
+                strong {
+                    font-size: 38px;
+                    display: block;
+                    margin-bottom: 10px;
+                    @include roboto();
+                    letter-spacing: .5px;
+                    color: rgba(255, 255, 255, .9);
+                }
+                p {
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: rgba(255, 255, 255, .8);
+                }
+            }
+        }
+    }
 }
 
 // gnb
@@ -27,6 +63,7 @@
         text-align: right;
         > li {
             display: inline-block;
+            vertical-align: top;
             > a {
                 display: block;
                 font-size: 18px;
@@ -35,15 +72,114 @@
                 padding: 0 25px;
                 @include transition();
             }
+            > ul {
+                position: relative;
+                z-index: 1;
+                padding-top: 40px;
+                opacity: 0;
+                @include transition($duration: .6s);
+                > li {
+                    text-align: center;
+                    > a {
+                        position: relative;
+                        display: inline-block;
+                        font-size: 16px;
+                        color: #fff;
+                        line-height: 40px;
+                        @include transition();
+                        span {
+                            position: absolute;
+                            bottom: 0;
+                            left: 50%;
+                            width: 0;
+                            height: 1px;
+                            background-color: #ff9045;
+                            @include transition();
+                        }
+                        &:hover {
+                            color: #ff9045;
+                            span {
+                                width: 100%;
+                                margin-left: -50%;
+                            }
+                        }
+                    }
+                }
+            }
+            &.active {
+                > a {
+                    color: #fff;
+                    background-color: rgba(0, 79, 111, .95);
+                }
+            }
         }
     }
 }
 
+// gnb open
+.opened {
+    #header {
+        overflow: visible;
+        #gnb {
+            > ul {
+                > li {
+                    > ul {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .gnb-intro {
+            height: 290px;
+            figure {
+                opacity: 1;
+            }
+        }
+    }
+}
 
 // footer
 #footer {
-    padding: 40px 0 45px;
+    padding-bottom: 45px;
     background-color: #1e1e1e;
+    > .contact {
+        margin-bottom: 40px;
+        text-align: center;
+        padding: 75px 0 65px;
+        background-image: url(/assets/images/main/bg_contact.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        figure {
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+            figcaption {
+                margin-top: 45px;
+                dl {
+                    color: #fff;
+                    font-size: 32px;
+                    dt {
+                        display: inline-block;
+                        font-weight: 500;
+                        margin-right: 10px;
+                    } 
+                    dd {
+                        display: inline-block;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+        p {
+            font-size: 16px;
+            color: #fff;
+            line-height: 24px;
+            font-weight: 300;
+            margin-top: 30px;
+        }
+    }
     h2 {
         font-size: 0;
         img {

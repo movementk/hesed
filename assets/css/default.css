@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&subset=korean");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
 /* 초기화 */
 h1, h2, h3, h4, h5, h6 {
@@ -142,6 +143,9 @@ a {
   .container-fluid .row .col-md-12,
   .container-fluid .row .col-lg-12 {
     float: left; }
+  .container .row.priority,
+  .container-fluid .row.priority {
+    overflow: visible; }
 
 .container {
   max-width: 1200px !important; }
@@ -155,6 +159,7 @@ body {
   font-family: 'Noto Sans KR', sans-serif; }
 
 #header {
+  overflow: hidden;
   position: fixed;
   top: 0;
   left: 0;
@@ -168,13 +173,57 @@ body {
     margin-top: 30px; }
     #header .logo a {
       display: block; }
+  #header .gnb-intro {
+    position: absolute;
+    top: 95px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    text-align: center;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.15s;
+    transition-duration: 0.15s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    background-color: rgba(0, 79, 111, 0.95); }
+    #header .gnb-intro figure {
+      opacity: 0;
+      margin-top: 43px;
+      -webkit-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.6s;
+      transition-duration: 0.6s;
+      -webkit-transition-timing-function: linear;
+      transition-timing-function: linear;
+      -webkit-transition-delay: 0s;
+      transition-delay: 0s; }
+      #header .gnb-intro figure img {
+        display: block;
+        margin: 0 auto; }
+      #header .gnb-intro figure figcaption {
+        margin-top: 20px; }
+        #header .gnb-intro figure figcaption strong {
+          font-size: 38px;
+          display: block;
+          margin-bottom: 10px;
+          font-family: 'Roboto', sans-serif;
+          letter-spacing: .5px;
+          color: rgba(255, 255, 255, 0.9); }
+        #header .gnb-intro figure figcaption p {
+          font-size: 14px;
+          line-height: 24px;
+          color: rgba(255, 255, 255, 0.8); }
 
 #gnb > ul {
   overflow: hidden;
   font-size: 0;
   text-align: right; }
   #gnb > ul > li {
-    display: inline-block; }
+    display: inline-block;
+    vertical-align: top; }
     #gnb > ul > li > a {
       display: block;
       font-size: 18px;
@@ -189,10 +238,100 @@ body {
       transition-timing-function: linear;
       -webkit-transition-delay: 0s;
       transition-delay: 0s; }
+    #gnb > ul > li > ul {
+      position: relative;
+      z-index: 1;
+      padding-top: 40px;
+      opacity: 0;
+      -webkit-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.6s;
+      transition-duration: 0.6s;
+      -webkit-transition-timing-function: linear;
+      transition-timing-function: linear;
+      -webkit-transition-delay: 0s;
+      transition-delay: 0s; }
+      #gnb > ul > li > ul > li {
+        text-align: center; }
+        #gnb > ul > li > ul > li > a {
+          position: relative;
+          display: inline-block;
+          font-size: 16px;
+          color: #fff;
+          line-height: 40px;
+          -webkit-transition-property: all;
+          transition-property: all;
+          -webkit-transition-duration: 0.15s;
+          transition-duration: 0.15s;
+          -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+          -webkit-transition-delay: 0s;
+          transition-delay: 0s; }
+          #gnb > ul > li > ul > li > a span {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 1px;
+            background-color: #ff9045;
+            -webkit-transition-property: all;
+            transition-property: all;
+            -webkit-transition-duration: 0.15s;
+            transition-duration: 0.15s;
+            -webkit-transition-timing-function: linear;
+            transition-timing-function: linear;
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s; }
+          #gnb > ul > li > ul > li > a:hover {
+            color: #ff9045; }
+            #gnb > ul > li > ul > li > a:hover span {
+              width: 100%;
+              margin-left: -50%; }
+    #gnb > ul > li.active > a {
+      color: #fff;
+      background-color: rgba(0, 79, 111, 0.95); }
+
+.opened #header {
+  overflow: visible; }
+  .opened #header #gnb > ul > li > ul {
+    opacity: 1; }
+  .opened #header .gnb-intro {
+    height: 290px; }
+    .opened #header .gnb-intro figure {
+      opacity: 1; }
 
 #footer {
-  padding: 40px 0 45px;
+  padding-bottom: 45px;
   background-color: #1e1e1e; }
+  #footer > .contact {
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 75px 0 65px;
+    background-image: url(/assets/images/main/bg_contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%; }
+    #footer > .contact figure img {
+      display: block;
+      margin: 0 auto; }
+    #footer > .contact figure figcaption {
+      margin-top: 45px; }
+      #footer > .contact figure figcaption dl {
+        color: #fff;
+        font-size: 32px; }
+        #footer > .contact figure figcaption dl dt {
+          display: inline-block;
+          font-weight: 500;
+          margin-right: 10px; }
+        #footer > .contact figure figcaption dl dd {
+          display: inline-block;
+          font-weight: 500; }
+    #footer > .contact p {
+      font-size: 16px;
+      color: #fff;
+      line-height: 24px;
+      font-weight: 300;
+      margin-top: 30px; }
   #footer h2 {
     font-size: 0; }
     #footer h2 img {
