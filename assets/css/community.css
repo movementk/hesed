@@ -227,6 +227,9 @@ body {
   .photo-list .section-content .search-form {
     margin-top: 40px; }
 
+.photo-view .section-content .btn-area {
+  margin-top: 30px; }
+
 .foot-table .section-content .paging {
   margin-top: 35px; }
 .foot-table .section-content .search-form {
@@ -237,9 +240,20 @@ body {
 .notice-list .section-content .search-form {
   margin-top: 40px; }
 
+.notice-view .section-content .btn-area {
+  margin-top: 30px; }
+
+.free-board-list .section-content .btn-area {
+  margin-top: 30px; }
 .free-board-list .section-content .paging {
   margin-top: 35px; }
 .free-board-list .section-content .search-form {
   margin-top: 40px; }
+
+.free-board-view .section-content .btn-area {
+  margin-top: 30px; }
+
+.free-board-write .section-content .btn-area {
+  margin-top: 30px; }
 
 /*# sourceMappingURL=community.css.map */

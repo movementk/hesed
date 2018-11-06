@@ -1,0 +1,239 @@
+@import 'common';
+
+.introduction {
+    .page-header {
+        background-image: url(/assets/images/introduction/bg_page_header.jpg);
+    }
+}
+
+// greeting
+.greeting {
+    .section-content {
+        h5 {
+            font-size: 38px;
+            font-weight: 400;
+            line-height: 60px;
+            color: #333;
+            margin-bottom: 70px;
+            letter-spacing: -1px;
+            strong {
+                color: #33738d;
+            }
+        }
+        .slogan {
+            font-size: 22px;
+            color: #555;
+            line-height: 36px;
+            font-weight: 400;
+            padding-bottom: 310px;
+            background-image: url(/assets/images/introduction/bg_greeting.png);
+            background-repeat: no-repeat;
+            background-position: 50% 100%;
+        }
+        .summary {
+            margin-top: 60px;
+            overflow: hidden;
+            p {
+                float: left;
+                width: 50%;
+                word-break: keep-all;
+                font-size: 16px;
+                color: #555;
+                letter-spacing: -.5px;
+                font-weight: 300;
+                line-height: 30px;
+                &:first-child {
+                    padding-right: 35px;
+                }
+                &:last-child {
+                    padding-left: 35px;
+                }
+            }
+        }
+    }
+}
+
+// vision
+.vision {
+    .section-content {
+        .sub-title {
+            & ~ .sub-title {
+                margin-top: 90px;
+            }
+        }
+        > p {
+            font-size: 16px;
+            color: #555;
+            line-height: 30px;
+        }
+        > article {
+            text-align: center;
+            padding: 80px 0 70px;
+            border: 1px solid #dfdfdf;
+            background-color: #f1f1f1;
+            figure {
+                display: block;
+                margin: 0 auto;
+                & ~ figure {
+                    margin-top: 50px;
+                }
+            }
+            > p {
+                font-size: 20px;
+                color: #333;
+                font-weight: 400;
+                line-height: 40px;
+                margin-top: 40px;
+                strong {
+                    font-size: 30px;
+                    color: #33738d;
+                }
+            }
+        }
+        > ul {
+            margin-top: 40px;
+            > li {
+                > .circle-box {
+                    text-align: center;
+                    .icon-item {
+                        display: block;
+                        margin: 0 auto;
+                        width: 200px;
+                        height: 200px;
+                        border-radius: 50%;
+                        background-repeat: no-repeat;
+                        background-position: 50% 50%;
+                        background-color: #ebebeb;
+                        @include transition();
+                    }
+                    > p {
+                        margin-top: 20px;
+                        font-size: 18px;
+                        color: #333;
+                        line-height: 30px;
+                    }
+                    &:hover {
+                        .icon-item {
+                            background-color: #33738d;
+                        }
+                    }
+                }
+                &:nth-of-type(1) {
+                    .circle-box {
+                        .icon-item {
+                            background-image: url(/assets/images/introduction/img_vision01.png);
+                        }
+                        &:hover {
+                            .icon-item {
+                                background-image: url(/assets/images/introduction/img_vision01_on.png);
+                            }
+                        }
+                    }
+                }
+                &:nth-of-type(2) {
+                    .circle-box {
+                        .icon-item {
+                            background-image: url(/assets/images/introduction/img_vision02.png);
+                        }
+                        &:hover {
+                            .icon-item {
+                                background-image: url(/assets/images/introduction/img_vision02_on.png);
+                            }
+                        }
+                    }
+                }
+                &:nth-of-type(3) {
+                    .circle-box {
+                        .icon-item {
+                            background-image: url(/assets/images/introduction/img_vision03.png);
+                        }
+                        &:hover {
+                            .icon-item {
+                                background-image: url(/assets/images/introduction/img_vision03_on.png);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// business
+.business {
+    .section-content {
+        .sub-title {
+            & ~ .sub-title {
+                margin-top: 90px;
+            }
+        }
+        figure {
+            overflow: hidden;
+            margin-bottom: 40px;
+            > img {
+                float: left;
+                margin-right: 10px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+// location
+.location {
+    .section-content {
+        .maps {
+            border: 1px solid #dfdfdf;
+            margin-bottom: 40px;
+            img {
+                width: 100%;
+            }
+        }
+        > ul {
+            > li {
+                display: table;
+                width: 100%;
+                & ~ li {
+                    margin-top: 30px;
+                }
+                > figure {
+                    display: table-cell;
+                    width: 100px;
+                    height: 100px;
+                    vertical-align: middle;
+                    border-radius: 50%;
+                    text-align: center;
+                    background-color: #f1f1f1;
+                    img {
+                        display: inline-block;
+                    }
+                }
+                > dl {
+                    display: table-cell;
+                    vertical-align: middle;
+                    padding-left: 30px;
+                    dt {
+                        font-size: 18px;
+                        color: #33738d;
+                        font-weight: 400;
+                        margin-bottom: 5px;
+                    }
+                    dd {
+                        font-size: 16px;
+                        color: #555;
+                        font-weight: 300;
+                        line-height: 30px;
+                        address {
+                            font-size: 16px;
+                            color: #555;
+                            font-weight: 300;
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

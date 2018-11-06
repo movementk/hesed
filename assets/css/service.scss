@@ -1,0 +1,204 @@
+@import 'common';
+
+.service {
+    .page-header {
+        background-image: url(/assets/images/service/bg_page_header.jpg);
+    }
+}
+
+// health-care
+.health-care {
+    .section-content {
+        .sub-title {
+            & ~ .sub-title {
+                margin-top: 90px;
+            }
+        }
+        > p {
+            font-size: 16px;
+            color: #555;
+            line-height: 30px;
+        }
+        ul {
+            margin-top: 60px;
+            li {
+                text-align: center;
+                .circle-box {
+                    display: block;
+                    .icon-item {
+                        width: 200px;
+                        height: 200px;
+                        border-radius: 50%;
+                        margin: 0 auto;
+                        @include transition();
+                        background-repeat: no-repeat;
+                        background-position: 50% 50%;
+                        background-color: #f1f1f1;
+                    }
+                    &:hover {
+                        .icon-item {
+                            background-color: #33738d;
+                        }
+                    }
+                }
+                dl {
+                    margin-top: 30px;
+                    dt {
+                        font-size: 18px;
+                        color: #333;
+                        font-weight: 400;
+                    }
+                    dd {
+                        margin-top: 25px;
+                        font-size: 15px;
+                        color: #555;
+                        font-weight: 300;
+                        line-height: 30px;
+                    }
+                }
+                &:nth-of-type(3) ~ li {
+                    .circle-box {
+                        margin-top: 60px;
+                    }
+                }
+                &:nth-of-type(1) {
+                    .circle-box {
+                        .icon-item {
+                            background-image: url(/assets/images/service/icon_health01.png);
+                        }
+                        &:hover {
+                            .icon-item {
+                                background-image: url(/assets/images/service/icon_health01_on.png);
+                            }
+                        }
+                    }
+                }
+                &:nth-of-type(2) {
+                    .circle-box {
+                        .icon-item {
+                            background-image: url(/assets/images/service/icon_health02.png);
+                        }
+                        &:hover {
+                            .icon-item {
+                                background-image: url(/assets/images/service/icon_health02_on.png);
+                            }
+                        }
+                    }
+                }
+                &:nth-of-type(3) {
+                    .circle-box {
+                        .icon-item {
+                            background-image: url(/assets/images/service/icon_health03.png);
+                        }
+                        &:hover {
+                            .icon-item {
+                                background-image: url(/assets/images/service/icon_health03_on.png);
+                            }
+                        }
+                    }
+                }
+                &:nth-of-type(4) {
+                    .circle-box {
+                        .icon-item {
+                            background-image: url(/assets/images/service/icon_health04.png);
+                        }
+                        &:hover {
+                            .icon-item {
+                                background-image: url(/assets/images/service/icon_health04_on.png);
+                            }
+                        }
+                    }
+                }
+                &:nth-of-type(5) {
+                    .circle-box {
+                        .icon-item {
+                            background-image: url(/assets/images/service/icon_health05.png);
+                        }
+                        &:hover {
+                            .icon-item {
+                                background-image: url(/assets/images/service/icon_health05_on.png);
+                            }
+                        }
+                    }
+                }
+                &:nth-of-type(6) {
+                    .circle-box {
+                        .icon-item {
+                            background-image: url(/assets/images/service/icon_health06.png);
+                        }
+                        &:hover {
+                            .icon-item {
+                                background-image: url(/assets/images/service/icon_health06_on.png);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// leisure-life
+.leisure-life {
+    .section-content {
+        .sub-title {
+            & ~ .sub-title {
+                margin-top: 90px;
+            }
+        }
+        > p {
+            font-size: 16px;
+            color: #555;
+            line-height: 30px;
+        }
+        .decimal-list {
+            margin-top: 40px;
+            padding: 30px 35px;
+            border: 1px solid #dfdfdf;
+        }
+        ul {
+            margin-top: 40px;
+            li {
+                figure {
+                    img {
+                        
+                    }
+                    figcaption {
+                        text-align: center;
+                        padding: 30px 0 40px;
+                        border: 1px solid #dfdfdf;
+                        @include transition();
+                        dl {
+                            dt {
+                                font-size: 17px;
+                                color: #333;
+                                font-weight: 400;
+                            }
+                            dd {
+                                font-size: 15px;
+                                color: #555;
+                                line-height: 26px;
+                                font-weight: 300;
+                                margin-top: 25px;
+                            }
+                        }
+                    }
+                    &:hover {
+                        figcaption {
+                            border-color: #33738d;
+                            background-color: #33738d;
+                            dl {
+                                dt {
+                                    color: #fff;
+                                }
+                                dd {
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

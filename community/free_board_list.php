@@ -132,6 +132,11 @@
                                     </tbody>
                                 </table>
                             </div>
+                            <div class="btn-area">
+                                <p>
+                                    <a href="/community/inquiry_write.php" class="btn btn-default" role="button">문의하기</a>
+                                </p>
+                            </div>
                             <nav class="paging" aria-label="Page navigation">
                                 <ul class="pagination">
                                     <li class="first">

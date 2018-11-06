@@ -81,24 +81,6 @@
                         </div>
                     </div>
                 </li>
-                <li class="visual-list" style="background-image: url(/assets/images/main/img_slider05.jpg);">
-                    <div class="container">
-                        <div class="slogan">
-                            <small>아름다운 사람</small>
-                            <h3>아름다운 동행</h3>
-                            <p>
-                                이 곳 헤세드하우스는 모든 종사자들의 예수님의 마음과<br>
-                                섬김의 손길을 통해 어르신들의 영육간 회복이 넘치는<br>
-                                은혜의 집입니다.
-                            </p>
-                            <hr>
-                            <strong>
-                                어르신을 내 가족처럼 정성과<br>
-                                사랑으로 모시겠습니다.
-                            </strong>
-                        </div>
-                    </div>
-                </li>
             </ul>
             <p class="summary">
                 헤세드하우스는 국내 어느 시설 보다 쾌적한 환경, 최적의 접근성, 차별화된 <br>
@@ -172,23 +154,23 @@
             <ul class="direction-slide">
                 <li class="bg-list" style="background-image: url(/assets/images/main/img_direction_slide01.jpg);">
                     <div class="details">
-                        <small>헤세드하우스만의 차별화 방향</small>
+                        <small>헤세드하우스만의 차별화 방향 01</small>
                         <h3>의식주 서비스 지속 개선</h3>
                         <p>의식주 서비스 지속 개선에 관한 간략한 설명이 노출되는 영역입니다.<br>의식주 서비스 지속 개선에 관한 간략한 설명이 노출되는 영역입니다.</p>
                     </div>
                 </li>
-                <li class="bg-list" style="background-image: url(/assets/images/main/img_direction_slide01.jpg);">
+                <li class="bg-list" style="background-image: url(/assets/images/main/img_direction_slide02.jpg);">
                     <div class="details">
-                        <small>헤세드하우스만의 차별화 방향</small>
-                        <h3>의식주 서비스 지속 개선</h3>
-                        <p>의식주 서비스 지속 개선에 관한 간략한 설명이 노출되는 영역입니다.<br>의식주 서비스 지속 개선에 관한 간략한 설명이 노출되는 영역입니다.</p>
+                        <small>헤세드하우스만의 차별화 방향 02</small>
+                        <h3>개인별 맞춤 서비스 전환</h3>
+                        <p>획일화된 집단 서비스에서 개인별 맞춤 서비스 전환에 관한 간략한 설명이 노출되는 영역입니다.<br>간략한 설명이 노출되는 영역입니다.</p>
                     </div>
                 </li>
-                <li class="bg-list" style="background-image: url(/assets/images/main/img_direction_slide01.jpg);">
+                <li class="bg-list" style="background-image: url(/assets/images/main/img_direction_slide03.jpg);">
                     <div class="details">
-                        <small>헤세드하우스만의 차별화 방향</small>
-                        <h3>의식주 서비스 지속 개선</h3>
-                        <p>의식주 서비스 지속 개선에 관한 간략한 설명이 노출되는 영역입니다.<br>의식주 서비스 지속 개선에 관한 간략한 설명이 노출되는 영역입니다.</p>
+                        <small>헤세드하우스만의 차별화 방향 03</small>
+                        <h3>지속적인 소통 확대</h3>
+                        <p>지속적인 소통 확대에 관한 간략한 설명이 노출되는 영역입니다.<br>지속적인 소통 확대에 관한 간략한 설명이 노출되는 영역입니다.</p>
                     </div>
                 </li>
             </ul>
@@ -200,14 +182,14 @@
                         <article class="facilities-guide">
                             <h3 class="article-title">
                                 요양원 시설 안내
-                                <a href="#">
+                                <a href="/facility/facility_list.php">
                                     <i class="icon-plus">
                                         <span class="sr-only">더보기</span>
                                     </i>
                                 </a>
                             </h3>
                             <div class="details">
-                                <a href="#">
+                                <a href="/facility/facility_list.php">
                                     <div class="item">
                                         <img src="/assets/images/main/img_facilities01.jpg" alt="">
                                     </div>
@@ -220,14 +202,14 @@
                         <article class="event-img">
                             <h3 class="article-title">
                                 행사 사진
-                                <a href="#">
+                                <a href="/community/photo_list.php">
                                     <i class="icon-plus">
                                         <span class="sr-only">더보기</span>
                                     </i>
                                 </a>
                             </h3>
                             <div class="details">
-                                <a href="#">
+                                <a href="/community/photo_list.php">
                                     <div class="item">
                                         <img src="/assets/images/main/img_event01.jpg" alt="">
                                     </div>
@@ -239,9 +221,11 @@
                     <div class="col-4">
                         <article class="location">
                             <h3 class="article-title">오시는 길</h3>
-                            <div class="maps">
-                                <img src="/assets/images/main/img_location.jpg" alt="">
-                            </div>
+                            <a href="/introduction/location.php">
+                                <div class="maps">
+                                    <img src="/assets/images/main/img_location.jpg" alt="">
+                                </div>
+                            </a>
                         </article>
                     </div>
                     <div class="col-6">

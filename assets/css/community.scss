@@ -118,6 +118,15 @@
     }
 }
 
+// photo-view
+.photo-view {
+    .section-content {
+        .btn-area {
+            margin-top: 30px;
+        }
+    }
+}
+
 // foot-table
 .foot-table {
     .section-content {
@@ -142,14 +151,44 @@
     }
 }
 
+// notice-view
+.notice-view {
+    .section-content {
+        .btn-area {
+            margin-top: 30px;
+        }
+    }
+}
+
 // free-board-list
 .free-board-list {
     .section-content {
+        .btn-area {
+            margin-top: 30px;
+        }
         .paging {
             margin-top: 35px;
         }
         .search-form {
             margin-top: 40px;
+        }
+    }
+}
+
+// free-board-view
+.free-board-view {
+    .section-content {
+        .btn-area {
+            margin-top: 30px;
+        }
+    }
+}
+
+// free-board-write
+.free-board-write {
+    .section-content {
+        .btn-area {
+            margin-top: 30px;
         }
     }
 }

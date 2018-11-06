@@ -465,8 +465,7 @@ body {
   padding: 25px 150px;
   background-color: #ebebeb; }
   .search-form .form-group {
-    position: relative;
-    padding-left: 145px; }
+    position: relative; }
     .search-form .form-group select {
       position: absolute;
       top: 0;

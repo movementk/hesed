@@ -13,12 +13,12 @@
                 <nav id="gnb">
                     <ul>
                         <li>
-                            <a href="#">요양원소개</a>
+                            <a href="/introduction/greeting.php">요양원소개</a>
                             <ul>
-                                <li><a href="#">인사말 <span></span></a></li>
-                                <li><a href="#">비전 및 목표 <span></span></a></li>
-                                <li><a href="#">운영방향 <span></span></a></li>
-                                <li><a href="#">오시는 길 <span></span></a></li>
+                                <li><a href="/introduction/greeting.php">인사말 <span></span></a></li>
+                                <li><a href="/introduction/vision.php">비전 및 목표 <span></span></a></li>
+                                <li><a href="/introduction/business.php">운영방향 <span></span></a></li>
+                                <li><a href="/introduction/location.php">오시는 길 <span></span></a></li>
                             </ul>
                         </li>
                         <li>
@@ -28,10 +28,10 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">서비스안내</a>
+                            <a href="/service/health_care.php">서비스안내</a>
                             <ul>
-                                <li><a href="#">건강관리서비스 <span></span></a></li>
-                                <li><a href="#">생활여가서비스 <span></span></a></li>
+                                <li><a href="/service/health_care.php">건강관리서비스 <span></span></a></li>
+                                <li><a href="/service/leisure_life.php">생활여가서비스 <span></span></a></li>
                             </ul>
                         </li>
                         <li>
