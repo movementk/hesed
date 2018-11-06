@@ -568,12 +568,11 @@
             }
             .review-content {
                 margin-top: 25px;
-                display: table;
-                table-layout: fixed;
+                overflow: hidden;
                 width: 100%;
                 > div {
-                    display: table-cell;
-                    vertical-align: top;
+                    float: left;
+                    height: 158px;
                     &.review-img {
                         width: 232px;
                         img {
@@ -581,8 +580,9 @@
                         }
                     }
                     &.details {
+                        width: 248px;
                         position: relative;
-                        padding-left: 20px;
+                        margin-left: 19px;
                         p {
                             font-size: 15px;
                             color: #333;
@@ -593,7 +593,7 @@
                         .date {
                             position: absolute;
                             bottom: 0;
-                            left: 20px;
+                            left: 0;
                             @include lato();
                             font-size: 13px;
                             color: #666;

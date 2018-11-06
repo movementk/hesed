@@ -665,19 +665,19 @@ body {
         color: rgba(102, 102, 102, 0.5); }
   .information article .article-content .review-content {
     margin-top: 25px;
-    display: table;
-    table-layout: fixed;
+    overflow: hidden;
     width: 100%; }
     .information article .article-content .review-content > div {
-      display: table-cell;
-      vertical-align: top; }
+      float: left;
+      height: 158px; }
       .information article .article-content .review-content > div.review-img {
         width: 232px; }
         .information article .article-content .review-content > div.review-img img {
           width: 100%; }
       .information article .article-content .review-content > div.details {
+        width: 248px;
         position: relative;
-        padding-left: 20px; }
+        margin-left: 19px; }
         .information article .article-content .review-content > div.details p {
           font-size: 15px;
           color: #333;
@@ -687,7 +687,7 @@ body {
         .information article .article-content .review-content > div.details .date {
           position: absolute;
           bottom: 0;
-          left: 20px;
+          left: 0;
           font-family: 'Lato', sans-serif;
           font-size: 13px;
           color: #666; }
