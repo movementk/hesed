@@ -225,11 +225,12 @@ body {
     display: inline-block;
     vertical-align: top; }
     #gnb > ul > li > a {
+      width: 140px;
+      text-align: center;
       display: block;
       font-size: 18px;
       color: #333;
       line-height: 95px;
-      padding: 0 25px;
       -webkit-transition-property: all;
       transition-property: all;
       -webkit-transition-duration: 0.15s;

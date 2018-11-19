@@ -342,13 +342,14 @@ body {
     border-bottom: 1px solid #ccc; }
   .board-type-2 .accordion .card .card-header {
     border: 0;
-    padding: 0; }
+    padding: 0;
+    background: none !important; }
     .board-type-2 .accordion .card .card-header .btn-link {
       position: relative;
       font-size: 15px;
       color: #19607e;
       display: block;
-      text-decoration: none !important;
+      text-decoration: none;
       padding-right: 100px;
       padding-left: 25px;
       border-top: 1px solid #ccc; }
@@ -374,10 +375,15 @@ body {
           color: #999;
           line-height: 56px;
           font-weight: 400; }
-          .board-type-2 .accordion .card .card-header .btn-link ul li.date:before {
-            font-family: "fontello";
-            content: "\F133";
-            margin-right: 10px; }
+          .board-type-2 .accordion .card .card-header .btn-link ul li.date {
+            font-size: 13px; }
+            .board-type-2 .accordion .card .card-header .btn-link ul li.date:before {
+              position: relative;
+              top: -1px;
+              font-size: 12px;
+              font-family: "fontello";
+              content: "\F133";
+              margin-right: 10px; }
           .board-type-2 .accordion .card .card-header .btn-link ul li.title {
             color: #555; }
           .board-type-2 .accordion .card .card-header .btn-link ul li:nth-of-type(1) {

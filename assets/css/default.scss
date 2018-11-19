@@ -65,11 +65,12 @@
             display: inline-block;
             vertical-align: top;
             > a {
+                width: 140px;
+                text-align: center;
                 display: block;
                 font-size: 18px;
                 color: #333;
                 line-height: 95px;
-                padding: 0 25px;
                 @include transition();
             }
             > ul {
