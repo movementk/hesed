@@ -323,14 +323,17 @@ body {
   .board-type-1 > ul > li > a {
     display: block;
     text-align: center; }
-    .board-type-1 > ul > li > a figure img {
-      width: 100%;
-      display: block; }
-    .board-type-1 > ul > li > a figure figcaption {
-      font-size: 16px;
-      color: #555;
-      font-weight: 400;
-      margin-top: 20px; }
+    .board-type-1 > ul > li > a figure {
+      overflow: hidden; }
+      .board-type-1 > ul > li > a figure img {
+        width: 100%;
+        height: 190px;
+        display: block; }
+      .board-type-1 > ul > li > a figure figcaption {
+        font-size: 16px;
+        color: #555;
+        font-weight: 400;
+        margin-top: 20px; }
   .board-type-1 > ul > li:nth-of-type(3) ~ li > a {
     margin-top: 40px; }
 

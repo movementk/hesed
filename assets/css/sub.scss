@@ -214,8 +214,10 @@
                 display: block;
                 text-align: center;
                 figure {
+                    overflow: hidden;
                     img {
                         width: 100%;
+                        height: 190px;
                         display: block;
                     }
                     figcaption {
