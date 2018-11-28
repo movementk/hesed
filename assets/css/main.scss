@@ -452,9 +452,13 @@
                 text-align: center;
                 display: block;
                 .item {
-                    width: 100%;
+                    overflow: hidden;
                     height: 260px;
                     border: 1px solid #dedede;
+                    img {
+                        width: auto;
+                        height: 100%;
+                    }
                 }
                 h4 {
                     font-size: 15px;

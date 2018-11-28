@@ -571,9 +571,12 @@ body {
       text-align: center;
       display: block; }
       .information article .details > a .item {
-        width: 100%;
+        overflow: hidden;
         height: 260px;
         border: 1px solid #dedede; }
+        .information article .details > a .item img {
+          width: auto;
+          height: 100%; }
       .information article .details > a h4 {
         font-size: 15px;
         color: #333;
